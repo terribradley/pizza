@@ -1,34 +1,71 @@
-var priceLarge = 12
-var price Small = 10
-var pizzaToppings =[];
+
+var cheese = 1
+var meat = 3
+var vegetable = 2
+
 function Pizza (size, toppings) {
-  this.pizzSizes =size;
-  this.pizzaToppings = [toppings];
-  this.toppingTotals = toppungTotal
-}
+  this.pizzSize =size,
+  this.toppings = [],
+  this.cost = this.priceCalculator()
+};
 
-Pizza.finalPrice = function () {
-  if (this.pizzaSize === "large") {
-    priceLarge += this.PizzaToppings
+Pizza.prototype.addTopping = function(topping) {
+  this.toppings = [];
+     $("input[type='checkbox']").each(function() {
+       this.toppings.push($(this).val());
+     });
+};
+
+Pizza.prototype.priceCalculator = function () {
+  var priceLarge = 12;
+  var priceMedium = 11;
+  var priceSmall = 10;
+
+  if (this.pizzaSize === "large" && this.toppings === cheese ) {
+    this.cost = priceLarge += 1;
   }
-}
+  if (this.pizzaSize === "medium" && this.toppings === cheese){
+    this.cost = priceMedium += 1;
+  }
+  if (this.pizzaSize === "small" && this.toppings === cheese) {
+    this.cost = priceSmall += 1;
+  }
+  if (this.pizzaSize === "large" && this.toppings === meat ) {
+    this.cost = priceLarge += 3;
+  }
+  if (this.pizzaSize === "medium" && this.toppings === meat){
+    this.cost = priceMedium += 3;
+  }
+  if (this.pizzaSize === "small" && this.toppings === meat) {
+    this.cost = priceSmall += 3;
+  }
+  if (this.pizzaSize === "large" && this.toppings === vegetable) {
+    this.cost = priceLarge += 2;
+  }
+  if (this.pizzaSize === "medium" && this.toppings === vegetable){
+    this.cost = priceMedium += 2;
+  }
+  if (this.pizzaSize === "small" && this.toppings === vegetable) {
+    this.cost = priceSmall += 2;
+  }
+};
 
-Pizza.prototype.toppingPrice = function {
-  this.toppingTotals += this.pizzaToppings;
-  this.
-}
 
 
 
 
 
 
-(document).ready(function() {
-  $(form).submit (function() {
+
+$(document).ready(function() {
+  $("form").submit (function(event) {
+    event.preventDefault;
     var inputtedPizzaSize = $("input:radio[name=size]:checked").val();
-    var inputtedPizzaToppings = parseInt($(".pizza-toppings").val());
+    var inputtedPizzaToppings = $("input[type='checkbox']").val();
+       debugger;
 
-    var newPizza = new Pizza function(pizzaSize, pizzaToppings);
-    newPizza.finalPrice();
+
+    var newPizza = new Pizza(size, toppings);
+    newPizza.priceCalculator();
   })
-})
+});

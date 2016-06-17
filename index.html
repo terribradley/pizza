@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.0.0.js"></script>
+    <script src="js/jquery-1.12.4.js"></script>
     <script src="js/scripts.js"></script>
     <title>Pizza</title>
   </head>
@@ -14,100 +14,91 @@
       <div class="pizza-size">
         <div class="radio">
           <label>
-            <input type="radio" name="size" id="optionsRadios1" value="option1" checked>Small</label>
+            <input type="radio" name="size" value="small" checked>Small</label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="size" id="optionsRadios2" value="option2">Medium</label>
+            <input type="radio" name="size" value="medium">Medium</label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="size" id="optionsRadios2" value="option2">Large</label>
+            <input type="radio" name="size" value="large">Large</label>
         </div>
       </div>
     </form>
     <form>
       <div class="pizza-toppings">
         <h2>Please choose your toppings</h2>
-        <h2> Please choose a sauce:</h2>
-        <div class="radio">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Tomato</label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Olive Oil</label>
-        </div>
           <h2>These are the cheese options(non-dairy available):</h2>
         <div class="checkbox">
           <label>
-          <input type="checkbox" value="">Mozzarella</label>
+          <input type="checkbox" value="cheese">Mozzarella</label>
         </div>
         <div class="checkbox">
           <label>
-          <input type="checkbox" value="">Goat Cheese</label>
+          <input type="checkbox" value="cheese">Goat Cheese</label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="">Parmesan</label>
+            <input type="checkbox" value="cheese">Parmesan</label>
         </div>
         <div class="checkbox">
           <label>
-          <input type="checkbox" value="">Cashew Cheese(non-dairy)</label>
+          <input type="checkbox" value="cheese">Cashew Cheese(non-dairy)</label>
         </div>
         <h2>Meat options:</h2>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="">Pepperoni</label>
+            <input type="checkbox" value="meat">Pepperoni</label>
         </div>
         <div class="checkbox">
           <label>
-          <input type="checkbox" value="">Sausag</label>
+          <input type="checkbox" value="meat">Sausage</label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="">Checken</label>
+            <input type="checkbox" value="meat">Chicken</label>
         </div>
         <div class="checkbox">
           <label>
-          <input type="checkbox" value="">Ham</label>
+          <input type="checkbox" value="meat">Ham</label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="">Salami</label>
+            <input type="checkbox" value="meat">Salami</label>
         </div>
         <h2>Vegetable options:</h2>
         <div class="checkbox">
           <label>
-          <input type="checkbox" value="">Tomatoes</label>
+          <input type="checkbox" value="vegetable">Tomatoes</label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="">Mushrooms</label>
+            <input type="checkbox" value="vegetable">Mushrooms</label>
         </div>
         <div class="checkbox">
           <label>
-          <input type="checkbox" value="">Artichokes</label>
+          <input type="checkbox" value="vegetable">Artichokes</label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="">Roasted Olives</label>
+            <input type="checkbox" value="vegetable">Roasted Olives</label>
         </div>
         <div class="checkbox">
           <label>
-          <input type="checkbox" value="">Onions</label>
+          <input type="checkbox" value="vegetable">Onions</label>
         </div>
         <div class="checkbox">
           <label>
-          <input type="checkbox" value="">Pineapple</label>
+          <input type="checkbox" value="vegetable">Pineapple</label>
         </div>
         <div class="checkbox">
           <label>
-          <input type="checkbox" value="">Basil</label>
+          <input type="checkbox" value="vegetable">Basil</label>
         </div>
         <div class="checkbox">
           <label>
-          <input type="checkbox" value="">Peppers</label>
+          <input type="checkbox" value="vegetable">Peppers</label>
         </div>
     </div>
     <button type="submit" name="button" class="btn btn-default">Place Order</button>
