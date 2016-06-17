@@ -25,7 +25,7 @@ Pizza.prototype.toppingPrice = function {
 
 (document).ready(function() {
   $(form).submit (function() {
-    var inputtedPizzaSize = $(".pizza-size").val();
+    var inputtedPizzaSize = $("input:radio[name=size]:checked").val();
     var inputtedPizzaToppings = parseInt($(".pizza-toppings").val());
 
     var newPizza = new Pizza function(pizzaSize, pizzaToppings);

@@ -8,92 +8,109 @@
     <title>Pizza</title>
   </head>
   <body>
-    <div class="container">
       <h1>PIZZA</h1>
       <h2>What Size would you like?</h2>
     <form>
-      <div class="radio pizza-size">
-        <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Small</label>
+      <div class="pizza-size">
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" id="optionsRadios1" value="option1" checked>Small</label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" id="optionsRadios2" value="option2">Medium</label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" id="optionsRadios2" value="option2">Large</label>
+        </div>
       </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Large</label>
-      </div>
-            <h2>Please choose your toppings</h2>
-      <div class="pizza-toppings">
-      <div class="checkbox">
-        <label>
-        <input type="checkbox" value="">Mozzarella</label>
-      </div>
-      <div class="checkbox">
-        <label>
-        <input type="checkbox" value="">Goat Cheese</label>
-      </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" value="">Parmesan</label>
-      </div>
-      <div class="checkbox">
-        <label>
-        <input type="checkbox" value="">Cashew Cheese(non-dairy)</label>
-      </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" value="">Pepperoni</label>
-      </div>
-      <div class="checkbox">
-        <label>
-        <input type="checkbox" value="">Sausag</label>
-      </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" value="">Checken</label>
-      </div>
-      <div class="checkbox">
-        <label>
-        <input type="checkbox" value="">Ham</label>
-      </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" value="">Salami</label>
-      </div>
-      <div class="checkbox">
-        <label>
-        <input type="checkbox" value="">Tomatoes</label>
-      </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" value="">Mushrooms</label>
-      </div>
-      <div class="checkbox">
-        <label>
-        <input type="checkbox" value="">Artichokes</label>
-      </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" value="">Roasted Olives</label>
-      </div>
-      <div class="checkbox">
-        <label>
-        <input type="checkbox" value="">Onions</label>
-      </div>
-      <div class="checkbox">
-        <label>
-        <input type="checkbox" value="">Pineapple</label>
-      </div>
-      <div class="checkbox">
-        <label>
-        <input type="checkbox" value="">Basil</label>
-      </div>
-      <div class="checkbox">
-        <label>
-        <input type="checkbox" value="">Peppers</label>
-      </div>
-    </div>
     </form>
-
-
+    <form>
+      <div class="pizza-toppings">
+        <h2>Please choose your toppings</h2>
+        <h2> Please choose a sauce:</h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Tomato</label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Olive Oil</label>
+        </div>
+          <h2>These are the cheese options(non-dairy available):</h2>
+        <div class="checkbox">
+          <label>
+          <input type="checkbox" value="">Mozzarella</label>
+        </div>
+        <div class="checkbox">
+          <label>
+          <input type="checkbox" value="">Goat Cheese</label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">Parmesan</label>
+        </div>
+        <div class="checkbox">
+          <label>
+          <input type="checkbox" value="">Cashew Cheese(non-dairy)</label>
+        </div>
+        <h2>Meat options:</h2>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">Pepperoni</label>
+        </div>
+        <div class="checkbox">
+          <label>
+          <input type="checkbox" value="">Sausag</label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">Checken</label>
+        </div>
+        <div class="checkbox">
+          <label>
+          <input type="checkbox" value="">Ham</label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">Salami</label>
+        </div>
+        <h2>Vegetable options:</h2>
+        <div class="checkbox">
+          <label>
+          <input type="checkbox" value="">Tomatoes</label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">Mushrooms</label>
+        </div>
+        <div class="checkbox">
+          <label>
+          <input type="checkbox" value="">Artichokes</label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">Roasted Olives</label>
+        </div>
+        <div class="checkbox">
+          <label>
+          <input type="checkbox" value="">Onions</label>
+        </div>
+        <div class="checkbox">
+          <label>
+          <input type="checkbox" value="">Pineapple</label>
+        </div>
+        <div class="checkbox">
+          <label>
+          <input type="checkbox" value="">Basil</label>
+        </div>
+        <div class="checkbox">
+          <label>
+          <input type="checkbox" value="">Peppers</label>
+        </div>
     </div>
+    <button type="submit" name="button" class="btn btn-default">Place Order</button>
+    </form>
   </body>
 </html>
