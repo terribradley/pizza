@@ -1,20 +1,15 @@
 
-var cheese = 1
-var meat = 3
-var vegetable = 2
-
 function Pizza (size, toppings) {
   this.pizzSize =size,
   this.toppings = [],
   this.cost = this.priceCalculator()
 };
 
-Pizza.prototype.addTopping = function(topping) {
-  this.toppings = [];
-     $("input[type='checkbox']").each(function() {
-       this.toppings.push($(this).val());
-     });
-};
+// Pizza.prototype.addTopping = function(topping) {
+//
+//        this.toppings.push($(this).val());
+//      });
+// };
 
 Pizza.prototype.priceCalculator = function () {
   var priceLarge = 12;
@@ -61,8 +56,13 @@ $(document).ready(function() {
   $("form").submit (function(event) {
     event.preventDefault;
     var inputtedPizzaSize = $("input:radio[name=size]:checked").val();
-    var inputtedPizzaToppings = $("input[type='checkbox']").val();
+    debugger;
+    var inputtedPizzaToppings = [];
+    $("input[type='checkbox']:checked").each(function() {
+      (inputtedPizzaToppings).push(this.value);
        debugger;
+    });
+
 
 
     var newPizza = new Pizza(size, toppings);
