@@ -38,7 +38,7 @@ Pizza.prototype.priceCalculator = function() {
 };
 
 $(document).ready (function() {
-  $("form").submit (function(event) {
+  $("form#submit-button").submit (function(event) {
 
     event.preventDefault
     var size = $("input[name=size]:checked").val();

@@ -8,87 +8,103 @@
   <title>Pizza</title>
 </head>
   <body>
-      <h1>PIZZA</h1>
-      <h2>What Size would you like?</h2>
-    <form>
-      <div class="pizza-size">
-        <div class="radio">
-          <label>
-            <input type="radio" name="size" value="small" checked>Small</label>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>PIZZA</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <h2>What Size would you like?</h2>
+        <form>
+        <div class="pizza-size">
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="small" checked>Small</label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="medium">Medium</label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="large">Large</label>
+          </div>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="size" value="medium">Medium</label>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="size" value="large">Large</label>
+        <div class="col-sm-6">
+          <div id=total>
+            <h3>your total is:</h3>
+          </div>
         </div>
       </div>
-    </form>
-    <form>
-      <div class="pizza-toppings">
         <h2>Please choose your toppings</h2>
-          <h2>These are the cheese options(non-dairy available):</h2>
-        <div class="checkbox">
-          <label>
-          <input type="checkbox" name="add-toppings" value="mozzarella">Mozzarella</label>
+      <div class="pizza-toppings">
+        <div class="row">
+          <div class="col-sm-4">
+            <h2>These are the cheese options(non-dairy available):</h2>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="add-toppings" value="mozzarella">Mozzarella</label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="add-toppings" value="goat">Goat Cheese</label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="add-toppings" value="cashew">Cashew Cheese(non-dairy)</label>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <h2>Meat options:</h2>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="add-toppings" value="pepperoni">Pepperoni</label>
+            </div>
+            <div class="checkbox">
+              <label>
+              <input type="checkbox" name="add-toppings" value="sausage">Sausage</label>
+            </div>
+            <div class="checkbox">
+              <label>
+              <input type="checkbox" name="add-toppings" value="ham">Ham</label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="add-toppings" value="salami">Salami</label>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <h2>Vegetable options:</h2>
+            <div class="checkbox">
+              <label>
+              <input type="checkbox" name="add-toppings" value="tomatoes">Tomatoes</label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="add-toppings" value="mushrooms">Mushrooms</label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="add-toppings" value="olives">Roasted Olives</label>
+            </div>
+            <div class="checkbox">
+              <label>
+              <input type="checkbox" name="add-toppings" value="onions">Onions</label>
+            </div>
+            <div class="checkbox">
+              <label>
+              <input type="checkbox" name="add-toppings" value="pineapple">Pineapple</label>
+            </div>
+            <div class="checkbox">
+              <label>
+              <input type="checkbox" name="add-toppings" value="peppers">Peppers</label>
+            </div>
+          </div>
         </div>
-        <div class="checkbox">
-          <label>
-          <input type="checkbox" name="add-toppings" value="goat">Goat Cheese</label>
-        </div>
-        <div class="checkbox">
-          <label>
-          <input type="checkbox" name="add-toppings" value="cashew">Cashew Cheese(non-dairy)</label>
-        </div>
-        <h2>Meat options:</h2>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" name="add-toppings" value="pepperoni">Pepperoni</label>
-        </div>
-        <div class="checkbox">
-          <label>
-          <input type="checkbox" name="add-toppings" value="sausage">Sausage</label>
-        </div>
-        <div class="checkbox">
-          <label>
-          <input type="checkbox" name="add-toppings" value="ham">Ham</label>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" name="add-toppings" value="salami">Salami</label>
-        </div>
-        <h2>Vegetable options:</h2>
-        <div class="checkbox">
-          <label>
-          <input type="checkbox" name="add-toppings" value="tomatoes">Tomatoes</label>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" name="add-toppings" value="mushrooms">Mushrooms</label>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" name="add-toppings" value="olives">Roasted Olives</label>
-        </div>
-        <div class="checkbox">
-          <label>
-          <input type="checkbox" name="add-toppings" value="onions">Onions</label>
-        </div>
-        <div class="checkbox">
-          <label>
-          <input type="checkbox" name="add-toppings" value="pineapple">Pineapple</label>
-        </div>
-        <div class="checkbox">
-          <label>
-          <input type="checkbox" name="add-toppings" value="peppers">Peppers</label>
-        </div>
+        <button id="submit-button" type="submit" name="button" class="btn btn-default">Place Order</button>
+        </form>
       </div>
-      <button id="submit-button" type="submit" name="button" class="btn btn-default">Place Order</button>
-    </form>
-    <div id=total>
-      <h3>your total is:</h3>
     </div>
   </body>
 </html>
