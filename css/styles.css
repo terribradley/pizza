@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto|Josefin+Slab:600|Raleway:400,600);
+body{
+  background-color: #F5EDDC;
+  margin-bottom: 15%;
+}
+.jumbotron {
+  font-family: 'Montserrat', 700, sans-serif;
+  text-align: center;
+  color: #0D8072;
+  padding-top: 6%;
+  background-image: url(../img/header.jpg);
+  height: 20%;
+  border-bottom: solid #0D8072;
+}
+.jumbotron h3 {
+  font-size: 1.1em;
+  color: white;
+}
+h2 {
+font-family: 'Raleway', sans-serif;
+color:#CF8804;
+}
+label {
+  font-family: 'Josefin Slab', serif;
+  color: #856B30;
+}
+#total {
+  color:#856B30;
+}
+.btn {
+  margin-top: 10px;
+  background: #52C7AC;
+  color: #F5EDDC;
+}
+.btn:hover {
+  color: #856B30;
+}

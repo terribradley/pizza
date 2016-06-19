@@ -27,7 +27,7 @@ Pizza.prototype.priceCalculator = function() {
   } else if (this.size === "large") {
     if (this.totalToppings <= 1) {
       return 20;
-    } else if (this.totalToppings === 2) {
+    } else if (this.totalToppings == 2) {
       return 24;
     } else if (this.totalToppings === 3) {
       return 28;
@@ -40,13 +40,10 @@ Pizza.prototype.priceCalculator = function() {
 $(document).ready (function() {
   $("#order-form").submit(function(event) {
     event.preventDefault();
-    $(alert("hi"));
     var size = $("input[name=size]:checked").val();
-
     var totalToppings = $("input:checkbox:checked").length;
-    debugger;
     var pizza = new Pizza(size, totalToppings);
     var cost = pizza.priceCalculator();
-    $("#total").text("$" + parseInt(cost));
+    $("#total").append("<p>" + "$" + cost + "</p>");
   });
 });
