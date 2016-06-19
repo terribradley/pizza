@@ -6,7 +6,7 @@
 
 ## Description
 
-_This website lets a user ordera custom pizza, by imputting their desired size and pizza toppings._
+_This website lets a user order a custom pizza, by inputting their desired size and pizza toppings._
 **Live Site: www.my-github-terribradley.github.io/pizza**
 
 ## Setup/Installation Requirements
@@ -32,12 +32,6 @@ _This website lets a user ordera custom pizza, by imputting their desired size a
 * Example Input: *Place order Button*
 * Example Output "Your total is $25"
 
-**Alert error if feilds arent filled out**
-
-* Example Input:
-* Example Output: #####[field required!]
-
-
 ## Support and contact details
 
 _If any problems should occur email Terri Bradley at terribradley3@gmail.com_
@@ -47,6 +41,10 @@ _If any problems should occur email Terri Bradley at terribradley3@gmail.com_
 _HTML, CSS, BootStrap, Javascript, jQuery_
 
 ### License
+
+*Public*
+
+Copyright (c) 2016 **_Terri Bradley_**
 
 *Public*
 
