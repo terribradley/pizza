@@ -1,6 +1,6 @@
 # _Pizza Ordering Site_
 
-#### _Allows a user to customize their pizza order, June, 170 2016_
+#### _Allows a user to customize their pizza order, June, 17 2016_
 
 #### By _**Terri Bradley**_
 
