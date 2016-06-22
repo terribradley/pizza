@@ -40,20 +40,16 @@ Pizza.prototype.priceCalculator = function() {
 $(document).ready (function() {
   $("#order-form").submit(function(event) {
     event.preventDefault();
-    // clearOrder();
     var size = $("input[name=size]:checked").val();
     var totalToppings = $("input:checkbox:checked").length;
     var pizza = new Pizza(size, totalToppings);
     var cost = pizza.priceCalculator();
     $("#total").show();
-    // debugger;
     $("#show-cost").text(cost);
-    $("#new-order").click(function() {
-      $("input:radio").attr("checked", false);
-      $("input:checkbox").attr("checked", false);
-      $("#total").hide();
+  $("#new-order").click(function() {
+    $("input:radio").attr("checked", false);
+    $("input:checkbox").attr("checked", false);
+    $("#total").hide();
     });
-
-
   });
 });
